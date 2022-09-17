@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .font{
     font-family: 'Bree Serif', serif;
@@ -10,9 +11,30 @@
 
 .pre-footer{
     background-color: #F6B067;
-    padding: 150px;
+    padding: 100px;
 }
 
-footer{
-    background-color: rgba(166, 72, 38, 92)
+.footer{
+    background-color: rgba(166, 72, 38, 92);
+    padding: 20px;
+    
+}
+
+a.btn-footer{
+    text-decoration: none;
+    color: white;
+}
+
+a.btn-footer:hover{
+    background-color: maroon;
+    padding: 19px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.text{
+    font-family: 'Lato', sans-serif;
+    font-size: large;
 }

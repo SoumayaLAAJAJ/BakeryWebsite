@@ -3,7 +3,7 @@
 {% block title %}Fournil des Anges - Accueil{% endblock %}
 
 {% block body %}
-
+{# CAROUSSEL #}
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,7 +44,20 @@
 </div>
 
 
+{# INTRO QUI-SOMMES NOUS ? #}
 
+<div class="container mt-5 d-flex">
+    <div class="row justify-content-between">
+        <div class="col-md-4 pb-2">
+            <h1 class='font pb-5'>Qui sommes-nous ? </h1>
+            <p class="text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus quis finibus urna, vitae dignissim risus. Ut nibh dolor, lacinia at tellus tristique, gravida hendrerit arcu. Sed sodales, mi id feugiat interdum, ante ligula posuere sapien, a imperdiet urna elit id tortor. </p>
+            <a href="" class="btn btn-danger btn-lg mx-1">En savoir plus</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{{asset('images/qui.jpg')}}" alt="">
+        </div>
+    </div>
+</div>
 
 
 {% endblock %}
