@@ -46,17 +46,97 @@
 
 {# INTRO QUI-SOMMES NOUS ? #}
 
-<div class="container mt-5 d-flex">
+<div class="container mt-5 d-flex mb-5">
     <div class="row justify-content-between">
         <div class="col-md-4 pb-2">
             <h1 class='font pb-5'>Qui sommes-nous ? </h1>
             <p class="text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus quis finibus urna, vitae dignissim risus. Ut nibh dolor, lacinia at tellus tristique, gravida hendrerit arcu. Sed sodales, mi id feugiat interdum, ante ligula posuere sapien, a imperdiet urna elit id tortor. </p>
-            <a href="" class="btn btn-danger btn-lg mx-1">En savoir plus</a>
+            <a href="{{ path("apropos") }}" class="btn btn-danger btn-lg mx-1">En savoir plus</a>
         </div>
         <div class="col-md-6">
             <img src="{{asset('images/qui.jpg')}}" alt="">
         </div>
     </div>
+</div>
+
+{# Nos produits #}
+
+<div class="container-fluid couleur-nav pb-3">
+    <h1 class="text-center font p-5 text-light">Nos produits</h1>
+    <div class="row d-flex">
+    <div class="col-lg-3 col-md-6">
+        <div class="card couleur-nav text-light" style="width: 18rem;">
+            <img src="{{asset('images/pain-category.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pains</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-warning text-center">Voir plus</a>
+            </div>
+        </div>   
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="card couleur-nav text-light" style="width: 18rem;">
+            <img src="{{asset('images/viennoise-cat.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Viennoiseries</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-warning text-center">Voir plus</a>
+            </div>
+        </div>    
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card couleur-nav text-light" style="width: 18rem;">
+            <img src="{{asset('images/menu-cat.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Menus</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-warning text-center">Voir plus</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card couleur-nav text-light" style="width: 18rem;">
+            <img src="{{asset('images/patisserie-cat.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Patisseries</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-warning text-center">Voir plus</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+{# Horaires #}
+<h1 class="text-center font p-5">Horaires</h1>
+<div class="container d-flex flex-wrap">
+    {# <div class="row"> #}
+        <div class="p-2 flex-fill text">
+                <p class='pb-4'>Lundi</p>
+                <p class='pb-4'>Mardi</p>
+                <p class='pb-4'>Mercredi</p>
+                <p class='pb-4'>Jeudi</p>
+                <p class='pb-4'>Vendredi</p>
+                <p class='pb-4'>Samedi</p>
+                <p class='pb-4'>Dimanche</p>
+        </div>
+        <div class="p-2 flex-fill text">
+                <p class='pb-4'>6H30 - 19H30</p>
+                <p class='pb-4'>6H30 - 19H30</p>
+                <p class='pb-4'>FERMETURE</p>
+                <p class='pb-4'>6H30 - 19H30</p>
+                <p class='pb-4'>6H30 - 19H30</p>
+                <p class='pb-4'>6H30 - 19H30</p>
+                <p class='pb-4'>6H00 - 13H30</p>
+        </div>
+        <div class="p-2 flex-fill">
+            <img  class="horaire" src="{{ asset('images/horaire.jpg') }}" alt="">
+        </div>
+    
+    {# </div> #}
 </div>
 
 
