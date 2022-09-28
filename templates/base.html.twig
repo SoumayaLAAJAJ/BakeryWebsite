@@ -15,7 +15,7 @@
 
 
     <body>
-        <nav class="navbar navbar-expand-lg couleur-nav fixed-top">
+        <nav class="navbar navbar-expand-lg couleur-nav">
             <div class="container-fluid">
 
                 <a class="navbar-brand ml-5 text-light p-3 font w-25 fs-1" href="#">Le Fournil des anges</a>
@@ -30,16 +30,24 @@
                     <li class="nav-item">
                     <a class="nav-link text-light ms-5 fs-4" href="{{path('apropos')}}">Qui sommes-nous ?</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                    <a class="nav-link text-light ms-5 fs-4" href="{{path('products')}}">Nos spécialités</a>
+                    </li>
+                    {# <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light ms-5 fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Nos spécialités
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Pains</a></li>
+                        Nos pro
+                    </a> #}
+                    
+                    
+                    {# <ul class="dropdown-menu">
+                    
+                        <li><a class="dropdown-item" href="">Pains</a></li>
                         <li><a class="dropdown-item" href="#">Viennoiseries</a></li>
                         <li><a class="dropdown-item" href="#">Pâtisseries</a></li>
                         <li><a class="dropdown-item" href="#">Menus</a></li>
-                    </ul>
+                    
+                    </ul> #}
+                    
                     </li>
                     <li class="nav-item">
                     <a class="nav-link text-light ms-5 fs-4" href="{{path('contact')}}">Contact</a>

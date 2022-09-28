@@ -2,19 +2,32 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Repository\CategoryRepository;
+use App\Repository\ProductRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class CategoryController extends AbstractController
 {
+
     /**
-     * @Route("/category", name="app_category")
+     * @Route("/category-detail", name="category-detail")
      */
-    public function index(): Response
+    public function index(CategoryRepository $categoryRepository, ProductRepository $productRepository): Response
     {
-        return $this->render('category/index.html.twig', [
-            'controller_name' => 'CategoryController',
+        $categories = $categoryRepository->findAll();
+        
+
+        // $product = $productRepository->findBy($id);
+
+        dd($categories);
+
+        return $this->render('category/detail.html.twig', [
+            'categories' => $categories,
+            // 'category' => $category,
+            // 'product' => $product
         ]);
     }
 }
